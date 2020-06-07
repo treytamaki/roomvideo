@@ -19,7 +19,7 @@
         if(navigator.getUserMedia){
             navigator.getUserMedia({
                 video:true, 
-                audio: true
+                audio: false
             }, streamWebCam, throwError);
         }
         function streamWebCam (stream){
