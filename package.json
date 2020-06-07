@@ -5,7 +5,7 @@
   "description": "Stream Anything",
   "main": "./server/proxy.js",
   "scripts": {
-    "deploy": "gh-pages -d roomvideo",
+    "deploy": "gh-pages -d storage",
     "start": "cd server && node proxy.js",
     "proxy": "cd server && nodemon proxy.js",
     "server": "cd server && nodemon server.js",
