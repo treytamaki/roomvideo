@@ -14,10 +14,13 @@
         var video = document.getElementById('video');
         var canvas = document.getElementById('canvas');
         var context = canvas.getContext('2d');
-        navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.oGetUserMedia || navigator.msGetUserMedia;
+        navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
         
         if(navigator.getUserMedia){
-            navigator.getUserMedia({video:true}, streamWebCam, throwError);
+            navigator.getUserMedia({
+                video:true, 
+                audio: true
+            }, streamWebCam, throwError);
         }
         function streamWebCam (stream){
             video.src = window.URL.createObjectURL(stream);
