@@ -19,7 +19,7 @@
     "express": "^4.17.1",
     "gh-pages": "^3.0.0",
     "http-proxy": "^1.17.0",
-    "socket.io": "^2.2.0"
+    "socket.io": "^2.5.0"
   },
   "repository": {
     "type": "git",
